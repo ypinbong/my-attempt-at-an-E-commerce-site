@@ -1,0 +1,188 @@
+@import "globals.css";
+@import "shop.css";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap");
+
+header {
+  align-content: center;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 5px 5px rgb(206, 203, 203);
+  position: sticky;
+  align-items: center;
+}
+
+.logo {
+  float: left;
+}
+.logo img {
+  height: 65px;
+  outline-style: none;
+}
+
+.logo img:hover {
+  opacity: 0.5;
+}
+
+.nav_links {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.nav_links li {
+  float: left;
+  align-items: center;
+}
+
+.nav_links a {
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav_links p {
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav_links a:hover {
+  background-color: none;
+  opacity: 0.5;
+}
+
+.nav_links a:visited {
+  color: rgb(138, 138, 138);
+}
+
+.fa:hover {
+  background: white;
+  color: tomato;
+}
+
+.nav_links input[type="submit"] {
+  margin: 0;
+  overflow: hidden;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Playfair Display", serif;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  outline: none;
+  color: rgb(138, 138, 138);
+}
+
+.nav_links input[type="submit"]:hover {
+  background-color: none;
+  opacity: 0.5;
+}
+
+.container {
+  max-width: 350px;
+  border-radius: 20px;
+  padding: 40px;
+  background: #da2c40c0;
+  box-sizing: border-box;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 1s;
+}
+
+.container input[type="text"],
+input[type="password"] {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 5px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.container input[type="submit"] {
+  padding: 10px 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: rgb(62, 66, 57);
+  color: #fff;
+  cursor: pointer;
+}
+
+.container input[type="submit"]:hover {
+  background-color: rgba(112, 112, 112, 0.9);
+}
+
+.banner {
+  max-width: auto;
+  border-radius: 20px;
+  padding: 40px;
+  background: #dd152cc0;
+  box-sizing: border-box;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: 1s;
+  margin-top: 30px;
+}
+
+.banner h1 {
+  font-size: 40px;
+}
+
+.banner h2 {
+  text-decoration: line-through;
+  text-transform: uppercase;
+  font-size: 55px;
+  color: rgb(88, 85, 85);
+}
+
+.banner button {
+  padding: 30px 50px;
+  margin-top: 10px;
+  border-radius: 100px;
+  border-style: none;
+  background-color: rgb(62, 66, 57);
+  color: #fff;
+  cursor: pointer;
+  font-size: 60px;
+  outline-style: none;
+}
+
+.banner button:hover {
+  background-color: rgba(112, 112, 112, 0.9);
+}
+
+.about h2 {
+  margin: 50px 50px 50px 50px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: gray;
+  font-size: 100%;
+  font-style: italic;
+  overflow-x: hidden;
+  padding-bottom: 5px;
+}

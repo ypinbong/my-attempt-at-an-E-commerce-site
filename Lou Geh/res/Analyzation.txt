@@ -1,0 +1,63 @@
+The Lou Geh Supermarket
+
+The lou geh supermarket records all the transaction performed in the business. 
+They record all the items delivered by their suppliers. Each item has a barcode, 
+a product description, quantity and the cost per unit item as indicated in the 
+delivery receipt.
+
+Each supplier has a unique code, the name of the company and their contact number, 
+as well as the address of the company.
+
+During sales transaction they record the product sold to every customer. 
+They record the quantity and the unit price of every item, as indicated in the 
+official receipt.
+
+For every customer they record their name, address and contact number.
+
+Req’d:
+	1. Table of products with the ff details:
+		a. Supplier
+		b. Product Description
+		c. Quantity
+		d. Cost Per Unit
+		e. Barcode
+	2. List or Table of suppliers with the ff details:
+		a. Name of company
+		b. Contact no.
+		c. Address of company
+	3. Record of sales with the ff details:
+		a. Quantity of each Item
+		b. Price of each Item
+		c. Summary of Purchase
+	4. Recording customer's information:
+		To get the ff information from the customers:
+			a. Name
+			b. Address
+			c. Contact No.
+		-the customers must be logged in before being able to purchase anything.
+		A sign up feature is required to fulfill this request.
+
+//Initiating a Table
+
+CREATE TABLE IF NOT EXISTS `customer` (
+ `id` int(11) NOT NULL AUTO_INCREMENT,
+ `first_Name` varchar(32) NOT NULL,
+ `last_Name` varchar(32) NOT NULL,
+ `address` varchar(50) NOT NULL,
+ `customerNum` varchar(32) NOT NULL,
+ `username` varchar(32) NOT NULL,
+ `password` varchar(50) NOT NULL,
+ PRIMARY KEY (`id`)
+ );
+
+CREATE TABLE IF NOT EXISTS `products` (
+`id` int(10) NOT NULL AUTO_INCREMENT,
+`name` varchar(250) NOT NULL,
+`code` varchar(100) NOT NULL,
+`price` double(9,2) NOT NULL,
+`image` varchar(250) NOT NULL,
+PRIMARY KEY (`id`),
+UNIQUE KEY `code` (`code`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE IF NOT EXISTS `products` ( `id` int(10) NOT NULL AUTO_INCREMENT, `product_name` varchar(250) NOT NULL, `description` varchar(100) NOT NULL, `quantity` int(100) NOT NULL, `price` double(9,2) NOT NULL, `supplierId` int(10) NOT NULL, `image` varchar(250) NOT NULL, PRIMARY KEY (`id`) ) ENGINE=InnoDB DEFAULT CHARSET=latin1
