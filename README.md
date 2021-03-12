@@ -9,7 +9,7 @@ It's rough around the edges to say the least, and it's not finished, but it's so
 
 ***SETUP***
 
-1. Required to run this website is application xampp,
+1. Required to run this website is the application xampp,
 
 2. This repo is composed of 2 main folders "Lou Geh" and "nalougeh"
 
@@ -26,12 +26,12 @@ check-out the website.
 
 My experience in developing this website:
 
-Being a full-stack developer is hard.
+Full-stack development is hard.
 Having less than 2 days of deadline is rough.
 But what this experience reminded me, is that coding is fun.
 When you spend most of your time just researching, coding, and debugging that you lose track of everything-
 except deadline of course. In the end, it reignited my focus into coding instead of just watching tutorials.
-There is so much more to learn into implementing than just watching and listening.
+There is so much more to learn from implementing than just watching and listening.
 
 In conclusion, I somehow regret I got nothing left of the 2 day deadline, and I felt like I could've done more to this website, but I had to take
 a chance that maybe by submitting it on time I was able to atleast show case what I can do and what I have gained. If somehow they could look past
